@@ -1,0 +1,7 @@
+{
+  "name": "minecraft-recipes",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
