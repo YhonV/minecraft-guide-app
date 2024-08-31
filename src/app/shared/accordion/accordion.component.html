@@ -1,0 +1,15 @@
+<!-- accordion.component.html -->
+<ion-accordion-group>
+  <ion-accordion *ngFor="let card of filteredCards" [value]="card.title">
+    <ion-item slot="header" class="accordion-header">
+      <div class="header-content">
+        <img [src]="card.icon" alt="{{card.title}}" class="icon">
+        <ion-label>{{card.title}}</ion-label>
+      </div>
+    </ion-item>
+    <div class="ion-padding accordion-content" slot="content">
+      <p><strong>Description:</strong> {{card.description}}</p>
+      <p><strong>Recipe:</strong> {{card.recipe}}</p>
+    </div>
+  </ion-accordion>
+</ion-accordion-group>

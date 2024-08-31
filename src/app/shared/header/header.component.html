@@ -1,0 +1,11 @@
+<ion-header class="ion-no-border" [translucent]="true">
+  <ion-toolbar class="center-title">
+    <ion-buttons slot="start">
+      <ion-back-button *ngIf="showBackButton" text="Back" defaultHref="/" mode="ios"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{title}}</ion-title>
+  </ion-toolbar>
+  <ion-toolbar *ngIf="showSearchBar">
+    <ion-searchbar (ionChange)="onSearchChange($event)"></ion-searchbar>
+  </ion-toolbar>
+</ion-header>

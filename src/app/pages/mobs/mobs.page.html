@@ -1,0 +1,15 @@
+<app-header
+  title="About game mobs"
+  [showSearchBar]="true"
+  [showBackButton]="true"
+></app-header>
+
+
+<ion-content>
+  <app-card-bosses *ngFor="let card of allCards"
+    [title]="card.title"
+    [description]="card.description"
+    [image]="card.image"
+    [tips]="card.tips"
+  ></app-card-bosses>
+</ion-content>

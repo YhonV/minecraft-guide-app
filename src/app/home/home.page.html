@@ -1,20 +1,20 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<app-header title="Home" [showSearchBar]="true" (ionChange)="onSearchChange($event)"></app-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content color="light" [fullscreen]="true" class="ion-padding">
+  <h1 class="main-title">Welcome to Minecraft Guide</h1>
+  <p class="intro-text">Here you will find some crafting recipes, construction ideas, and more :)</p>
+  <p class="intro-text">What are you looking for?</p>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <div class="cards-container">
+    <app-cards *ngFor="let card of filteredCards"
+    [title]="card.title"
+    [description]="card.description"
+    [image]="card.image"
+    [link]="card.link"
+    [routerLink]="card.routerLink">
+</app-cards>
   </div>
+  <p *ngIf="filteredCards.length === 0" class="no-results">
+    No se encontraron resultados para "{{ searchTerm }}".
+  </p>
 </ion-content>
