@@ -35,3 +35,64 @@
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
 // @import "@ionic/angular/css/palettes/dark.system.css";
+
+/* Global Styles */
+/* Minecraft Font */
+@font-face {
+  font-family: 'Minecraft';
+  src: url('/assets/fonts/Minecraftia-Regular.ttf') format('truetype');
+}
+
+/* Global Styles */
+body {
+  font-family: 'Minecraft', 'VT323', monospace;
+  color: #3F3F3F;
+}
+
+/* Minecraft-style Button */
+.minecraft-button {
+  background-color: #6B8E23;
+  color: white;
+  border: 2px solid #458B00;
+  padding: 10px 15px;
+  font-family: 'Minecraft', 'VT323', monospace;
+  font-size: 1em;
+  text-shadow: 2px 2px #3F3F3F;
+  box-shadow: inset -2px -2px 0 1px #548B54,
+              inset 2px 2px 0 1px #AAFFAA;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #548B54;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #8B6914;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D8AF6C;
+  border: 2px solid #8B6914;
+}
+
+/* Additional Minecraft-style classes */
+.minecraft-container {
+  background-color: #C6C6C6;
+  border: 2px solid #7F7F7F;
+  box-shadow: inset -2px -2px 0 1px #555555,
+              inset 2px 2px 0 1px #FFFFFF;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.minecraft-text {
+  color: #3F3F3F;
+  text-shadow: 1px 1px #FFFFFF;
+}

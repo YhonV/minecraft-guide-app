@@ -4,12 +4,31 @@
   [showBackButton]="true"
 ></app-header>
 
+<ion-content class="minecraft-theme">
+  <div class="toggle-container">
+    <div class="toggle-item">
+      <ion-toggle aria-label="Show Passive Mobs" (ionChange)="showPassive()" [checked]="isPassive === true">
+        <span class="toggle-label">Show Passive Mobs</span>
+      </ion-toggle>
+    </div>
+    <div class="toggle-item">
+      <ion-toggle aria-label="Show Aggressive Mobs" (ionChange)="showAggressive()" [checked]="isPassive === false">
+        <span class="toggle-label">Show Aggressive Mobs</span>
+      </ion-toggle>
+    </div>
+    <div class="toggle-item">
+      <ion-toggle aria-label="Show All Mobs" (ionChange)="showAll()" [checked]="isPassive === null">
+        <span class="toggle-label">Show All Mobs</span>
+      </ion-toggle>
+    </div>
+  </div>
 
-<ion-content>
-  <app-card-bosses *ngFor="let card of allCards"
-    [title]="card.title"
-    [description]="card.description"
-    [image]="card.image"
-    [tips]="card.tips"
-  ></app-card-bosses>
+  <ng-container *ngFor="let card of filteredCards">
+    <app-card-bosses
+      [title]="card.title"
+      [description]="card.description"
+      [image]="card.image"
+      [tips]="card.tips"
+    ></app-card-bosses>
+  </ng-container>
 </ion-content>
