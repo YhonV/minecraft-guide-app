@@ -6,6 +6,7 @@ import { HeaderComponent } from './header/header.component';
 import { CardsComponent } from './cards/cards.component';
 import { AccordionComponent } from './accordion/accordion.component';
 import { CardBossesComponent } from './card-bosses/card-bosses.component';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -27,7 +28,8 @@ import { CardBossesComponent } from './card-bosses/card-bosses.component';
     CommonModule,
     IonicModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    RouterModule
   ]
 })
 export class SharedModule { }

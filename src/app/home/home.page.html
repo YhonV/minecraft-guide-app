@@ -1,9 +1,8 @@
 <app-header title="Home" [showSearchBar]="true" (ionChange)="onSearchChange($event)"></app-header>
 <ion-content color="light" [fullscreen]="true" class="ion-padding">
   <div class="content-wrapper">
-    <h1 class="main-title">Welcome to Minecraft Guide</h1>
-    <p class="intro-text">Here you will find some crafting recipes, construction ideas, and more :)</p>
-    <p class="intro-text">What are you looking for?</p>
+    <h1 class="main-title">Minecraft Guide</h1>
+    <p class="intro-text">Here you will find some stuff related to minecraft :)</p>
     <div class="cards-container">
       <app-cards *ngFor="let card of filteredCards"
         [title]="card.title"

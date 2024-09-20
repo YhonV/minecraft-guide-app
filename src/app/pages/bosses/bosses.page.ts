@@ -17,7 +17,7 @@ export class BossesPage implements OnInit {
     { title: 'Wither', description: 'The Wither is a powerful, three-headed boss mob that is able to fly and shoot projectiles.', image: 'assets/bosses/wither.webp', tips: 'The Wither is immune to all status effects except for Wither and Poison. Bring a bow and arrow to take out the Wither from a distance.' },
     { title : 'Elder Guardian', description: 'The Elder Guardian is a stronger, larger variant of the Guardian that can only be found in or around ocean monuments.', image: 'assets/bosses/guardian.webp', tips: 'Elder Guardians are immune to knockback. Bring a bow and arrow to take out the Elder Guardians from a distance.' },
     { title: 'Warden' , description: 'The Warden is a hostile mob that is the first blind mob in Minecraft. It is a powerful mob that can kill players in two hits.', image: 'assets/bosses/warden.webp', tips: 'The Warden is blind and can only detect players through vibrations. Avoid making noise when near the Warden.' },
-    { title: 'Pillager Captain', description: 'The Pillager Captain is a hostile mob that leads groups of pillagers into battle. It is armed with a crossbow and can shoot arrows at players.', image: 'assets/bosses/pillager.webp', tips: 'The Pillager Captain is immune to knockback. Bring a bow and arrow to take out the Pillager Captain from a distance.' },
+    { title: 'Evoker', description: 'The Evoker is a hostile mob that can summon Vexes, fangs, and totems of undying. It is armed with a staff that can cast spells.', image: 'assets/bosses/pillager.webp', tips: 'The Evoker is immune to knockback. Bring a bow and arrow to take out the Evoker from a distance.' },
   ]
 
   getCards() {

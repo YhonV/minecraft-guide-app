@@ -1,5 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 
+export interface Card {
+  title: string;
+  description: string;
+  image: string;
+  link: string;
+  routerLink: string;
+}
+
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
@@ -15,28 +23,28 @@ export class HomePage {
   allCards = [
     {
     title:"Potions",
-    description:"Potions are concoctions that, depending on the potion, generate or do not generate a type of effect, with a limited time.",
+    description:"Learn about Potions and its effects :D",
     image:"assets/pociones.jpeg",
     link:"Click",
     routerLink: "/potions"
     },
     {
     title:"Game mobs",
-    description:"A creature (mob, derived from mobile, in English) is a living entity in the game, which can move, perform actions, and receive or inflict damage. Different types of creatures often have unique AI and loot.",
+    description:"See the mobs that exist in Minecraft",
     image:"assets/mobs.webp",
     link:"Click",
     routerLink: "/mobs" 
     },
     {
     title:"Game bosses",
-    description:"Bosses are hostile creatures that are more difficult to defeat than normal hostile creatures and sub-bosses. They usually have several types of attacks that they can use in a pattern.",
+    description:"Learn about the bosses that exist in Minecraft",
     image:"assets/bosses.webp",
     link:"Click",
     routerLink: "/bosses" 
     },
     {
       title:"Weapons and tools",
-      description:"Weapons and tools are items that can be used to attack enemies or break blocks. They can be made from different materials, each with its own characteristics.",
+      description:"Learn about the weapons and tools that exist in Minecraft",
       image:"assets/weaponsNtools.webp",
       link:"Click",
       routerLink: "/weaponsNtools"

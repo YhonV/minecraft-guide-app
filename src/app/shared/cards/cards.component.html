@@ -1,4 +1,4 @@
-<ion-card mode="ios" class="custom-card">
+<ion-card mode="ios" class="custom-card" (click)="preventCardClick($event)">
   <div class="card-header">
     <h2 class="title">{{title}}</h2>
   </div>
@@ -11,5 +11,5 @@
     <p class="description">{{description}}</p>
   </div>
 
-  <button class="link-button">{{link}}</button>
+  <button class="link-button" [routerLink]="routerLink">{{link}}</button>
 </ion-card>

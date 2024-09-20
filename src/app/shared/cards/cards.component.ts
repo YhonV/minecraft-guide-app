@@ -16,4 +16,8 @@ export class CardsComponent  implements OnInit {
 
   ngOnInit() {}
 
+  preventCardClick(event: Event) {
+    event.stopPropagation();
+  }
+
 }
